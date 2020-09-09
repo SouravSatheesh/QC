@@ -1,0 +1,152 @@
+body{
+  margin: 0;
+  padding: 0;
+  background:black;
+}
+.slidershow{
+  width: 710px;
+  height: 400px;
+  margin-left: 0%;
+  margin-top:1%;
+}
+#ev li :hover{
+  background-color: darkgoldenrod;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid gray;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover{
+  background: black;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0%.;
+  margin-right: 0.5%;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+ 
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+#ev li :hover{
+  background-color: darkgoldenrod;
+}
+#bo{
+  text-align: center;
+  
+  opacity: 1;
+  
+  padding-bottom: 20%;
+  background-color: red;
+  
+  
+  
+}
+p{
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.column{
+  float: left;
+}
+.fa {
+  margin-top: 1%;
+  margin-bottom: 1%;
+padding: 20px;
+font-size: 30px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+
+}
+.fa-instagram {
+background: #125688;
+color: white;
+}
+#fl{
+  margin-top: 7%;
+  margin-bottom: 20%;
+
+}
+#b1{
+  color:black; 
+  margin-left: 45%;
+  background-color: transparent;
+  width: 100px;
+  height:20px;
+  
+}
+body {
+   
+  display: block;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  background: url(bg.png);
+  
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}

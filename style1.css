@@ -1,0 +1,145 @@
+body{
+  margin: 0;
+  padding: 0;
+  
+}
+.slidershow{
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover{
+  background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+#v{
+  
+  margin-left: 25%;
+  margin-right: 25%;
+}
+#ev li :hover{
+  background-color: darkgoldenrod;
+}
+/* Left and right column */
+.column.side {
+  width: 23%;
+  
+}
+#c1{
+  margin-left: 2%;
+}
+#c2{
+  margin-right: 0.1%;
+  
+}
+
+/* Middle column */
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#k{
+  padding-bottom: 170%;
+}
+#j{
+  padding-bottom: 270%;
+}
+.fa {
+  margin-top: 1%;
+  margin-bottom: 1%;
+padding: 20px;
+font-size: 30px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+
+}
+.fa-instagram {
+background: #125688;
+color: white;
+}
+#fl{
+  margin-top: 10%;
+  margin-bottom: 20%;
+
+}
+#pic{
+  padding-left:1% ;
+  border-radius: 50%;
+  
+  
+}
+#v{
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="QC.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    var x=2;
+    var text=".jpg"
+    function changepicf()
+    {if(x==6)
+    {
+      x=1;
+    }
+      text=x+text;
+      document.getElementById('myImage').src=text;
+      x=x+1;
+      text=".jpg";
+    }
+    function changepicb()
+    {
+       
+      text=x+text;
+      document.getElementById('myImage').src=text;
+      
+          if(x==1)
+          {
+              x=7;
+          }
+      
+      x=x-1;
+      text=".jpg";
+    }
+
+  </script>
+</head>
+<body style="background-color:white;">
+
+<nav class="navbar  bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">
+        <img src="2.jpg" alt="logo" style="width:40px;">
+      </a>
+      
+  <a class="navbar-brand" href="#">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <li class="dropdown">
+            <a class ="dropdown-toggle nav-link "   data-toggle="dropdown" href="#">Events <span class="caret"></span></a>
+            <ul class=" bg-dark  dropdown-menu  " id="ev">
+              <li><a class="container-fluid nav-link" style="color: oldlace;" href="eroteme.html">Eroteme</a></li>
+              <li><a class="container-fluid nav-link" style="color: oldlace;" href="alumini.html">Alumini Quiz</a></li>
+              <li><a class="container-fluid nav-link" style="color: oldlace;" href="#">Dhwani</a></li>
+              <li><a class="container-fluid nav-link" style="color: oldlace;" href="drishti.html">Drishti</a></li>
+            </ul>
+          </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ExeCom</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Gallery</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+<img id="myImage" src="1.jpg" style="width:1264px;height: 500px;">
+<br><br>
+<button type="button" onclick="changepicb()" class="btn btn bg-dark" style="color:white; margin-left: 45%;"><</button>
+<button type="button" onclick="changepicf()" class="btn btn bg-dark" style="color:white; ">></button>
+
+  <div class="container-fluid" id="fl">
+    
+    
+      <div class="jumbotron bg-dark" id="bo" >
+       <div class="column">
+         <img src="cet emblem.jpg" alt="Notebook" > 
+       </div>
+       <div class="column">
+       
+        
+           <div class="center">
+           
+         
+           <h2><img src="2.jpg" alt="logo" style="height: 30px; width:40px;">
+         
+             <span style="color:black;">The</span> <span style="color:#d6930d"> CET</span><span style="color: black;"> Quiz</span> <span style="color:#d6930d"> Club</span> </h2>
+         </div>
+         
+       <p style="color: whitesmoke;">This is the offical website of the CET quiz club which is one of the most prestigious and active college quiz club in Kerala.</p>
+      <p style="color: whitesmoke;">We organise various college and open events throughout the year which are hosted and attended by the top quizzers in the country </p>
+      <p style="color: whitesmoke;">We meet informally every week and the goal of the club is promote and spread love for this fun activity of quizzing</p>
+   </div>
+   </div>
+ </div>
+ <br>
+ <div class="container-fluid bg-dark">
+  <div>
+  <span style="color: white;padding-left: 15%;">                               For Queries,contact</span>
+  <a href="https://www.facebook.com/erotemecet/" class="fa fa-facebook center"></a>
+  <a href="https://www.instagram.com/cetquizclub/?hl=en" class="fa fa-instagram center"></a>
+  </div>
+</div>
+
+  
+  </body>
+</html>
